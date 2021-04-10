@@ -8,52 +8,47 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
-
-<div class="linksRegion">
-    <div class="innerLinksRegion">
-        <a href="index.php">
-            <span aria-hidden="true" class="fa fa-arrow-left"></span>
-        </a>
-    </div>
-</div>
-<div class="container py-5">
-    <div class="canvasContainer">
-        <canvas height="450" id="canvas" width="460"></canvas>
-        <div class="gambleContainer">
-            <table class="betTable" style="width: 50%;">
-                <tr>
-                    <th>Bank Total</th>
-                    <th>Bet Value</th>
-                    <th>Last Win</th>
-                </tr>
-                <tr>
-                    <td id="bankTotal" value="100">100</td>
-                    <td id="betDisplay" value="0">0</td>
-                    <td id="winningAmount" value="0">0</td>
-                </tr>
-            </table>
-            <br><br><br>
-            <div id="recentNumbers"></div>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <canvas height="450" id="canvas" width="460"></canvas>
+            </div>
+            <div class="row">
+                <table class="betTable" style="width: 50%;">
+                    <tr>
+                        <th>Bank Total</th>
+                        <th>Bet Value</th>
+                        <th>Last Win</th>
+                    </tr>
+                    <tr>
+                        <td id="bankTotal" value="100">100</td>
+                        <td id="betDisplay" value="0">0</td>
+                        <td id="winningAmount" value="0">0</td>
+                    </tr>
+                </table>
+                <div id="recentNumbers"></div>
+            </div>
         </div>
-    </div>
-    <div class="bettingContainer">
-        <ul class="chipsContainer">
-            <li class="chips" id="chips_1" style="background-color: yellow" value="1">1</li>
-            <li class="chips" id="chips_5" style="background-color: pink" value="5">5</li>
-            <li class="chips" id="chips_10" style="background-color: blue" value="10">10</li>
-            <li class="chips" id="chips_25" style="background-color: green" value="25">25</li>
-            <li class="chips" id="chips_50" style="background-color: red" value="50">50</li>
-            <span aria-hidden="true" class="fa fa-play chips" id="spinBtn"
-                  title="Click to Play and Spin the Wheel!"></span>
-            <br>
-            <span aria-hidden="true" class="fa fa-refresh chips" id="resetBtn" title="Click here to Reset Game!"></span>
-            <br>
-            </span>
-        </ul>
-        <div class="sideBets"></div>
-        <ul class="outerTable">
-        </ul>
+        <div class="col">
+            <div class="bettingContainer">
+                <ul class="chipsContainer">
+                    <li class="chips" id="chips_1" style="background-color: yellow" value="1">1</li>
+                    <li class="chips" id="chips_5" style="background-color: pink" value="5">5</li>
+                    <li class="chips" id="chips_10" style="background-color: blue" value="10">10</li>
+                    <li class="chips" id="chips_25" style="background-color: green" value="25">25</li>
+                    <li class="chips" id="chips_50" style="background-color: red" value="50">50</li>
+                    <span aria-hidden="true" class="fa fa-play chips" id="spinBtn"
+                          title="Click to Play and Spin the Wheel!"></span>
+                    <span aria-hidden="true" class="fa fa-refresh chips" id="resetBtn"
+                          title="Click here to Reset Game!"></span>
+                    </span>
+                </ul>
+                <div class="sideBets"></div>
+                <ul class="outerTable">
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 <script src="js/rouletteScript.js" type="text/javascript"></script>
