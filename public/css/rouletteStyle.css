@@ -1,9 +1,3 @@
-* {
-    user-select: none;
-    background-color: #F8F8F8;
-    font-family: 'Century Gothic';
-}
-
 .chipsContainer li {
     color: white;
     width: 40px;
@@ -22,11 +16,16 @@
     color: gold;
 }
 
+.outerTable {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 .outerTable li {
     height: 29px;
     color: white;
     font-size: x-large;
-    padding-top: 10px;
     list-style-type: none;
     border: 1px solid black;
     position: relative;
@@ -107,6 +106,18 @@
     to {
         opacity: 0
     }
+}
+
+
+.linksRegion {
+    position: relative;
+    width: 90%;
+    height: 10px;
+    margin-left: 2%;
+}
+
+.innerLinksRegion {
+    float: left;
 }
 
 .innerLinksRegion span {
