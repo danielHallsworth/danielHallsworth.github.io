@@ -1,6 +1,6 @@
 #canvas {
-    margin-left: -8%;
-    margin-top: -5%;
+    height: 450px;
+    width: 460px;
 }
 
 .chipsContainer li {
@@ -39,7 +39,6 @@
 
 #numbers_40, #numbers_41, #numbers_42, #numbers_43, #numbers_44, #numbers_45, #numbers_46 {
     flex-basis: 16.5%;
-
 }
 
 #numbers_0 {
@@ -69,10 +68,7 @@
     color: white;
     width: 50px;
     text-align: center;
-    height: 50px;
-    line-height: 50px;
-    margin-left: 20px;
-    margin-top: 25px;
+    margin-right: 1rem;
     float: left;
 }
 
@@ -107,28 +103,4 @@
     to {
         opacity: 0
     }
-}
-
-
-.linksRegion {
-    position: relative;
-    width: 90%;
-    height: 10px;
-    margin-left: 2%;
-}
-
-.innerLinksRegion {
-    float: left;
-}
-
-.innerLinksRegion span {
-    font-size: 30px;
-    padding-top: 5px;
-    background-color: #F8F8F8;
-    color: black;
-}
-
-.innerLinksRegion span:hover {
-    color: gold !important;
-    background-color: #F8F8F8;
 }

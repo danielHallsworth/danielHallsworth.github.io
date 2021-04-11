@@ -8,46 +8,53 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-5 col-sm-10">
-            <div class="row p-0">
-                <canvas height="450" id="canvas" width="460" class="p-0"></canvas>
+<div class="container-fluid bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="row">
+                    <canvas height="450" id="canvas" width="460" class="p-0 mx-auto"></canvas>
+                </div>
+                <div class="row mx-auto mt-3 text-center p-0">
+                    <table class="table table-light table-bordered">
+                        <tr>
+                            <th>Bank Total</th>
+                            <th>Bet Value</th>
+                            <th>Last Win</th>
+                        </tr>
+                        <tr>
+                            <td id="bankTotal" value="100">100</td>
+                            <td id="betDisplay" value="0">0</td>
+                            <td id="winningAmount" value="0">0</td>
+                        </tr>
+                    </table>
+                    <div id="recentNumbers" class="pb-5"></div>
+                </div>
             </div>
-            <div class="row mx-auto mt-3">
-                <table class="table table-light table-bordered">
-                    <tr>
-                        <th>Bank Total</th>
-                        <th>Bet Value</th>
-                        <th>Last Win</th>
-                    </tr>
-                    <tr>
-                        <td id="bankTotal" value="100">100</td>
-                        <td id="betDisplay" value="0">0</td>
-                        <td id="winningAmount" value="0">0</td>
-                    </tr>
-                </table>
-                <div id="recentNumbers"></div>
+            <div class="col-md-6 col-sm-12 mt-md-5 p-0">
+                <div class="row">
+                    <div class="col-2 p-0">
+                        <ul class="chipsContainer">
+                            <li class="chips" id="chips_1" style="background-color: yellow" value="1">1</li>
+                            <li class="chips" id="chips_5" style="background-color: pink" value="5">5</li>
+                            <li class="chips" id="chips_10" style="background-color: blue" value="10">10</li>
+                            <li class="chips" id="chips_25" style="background-color: green" value="25">25</li>
+                            <li class="chips" id="chips_50" style="background-color: red" value="50">50</li>
+                            <span aria-hidden="true" class="fa fa-play chips btn btn-light btn-lg mt-2 w-100 btn-outline-secondary" id="spinBtn"
+                                  title="Click to Play and Spin the Wheel!"></span>
+                            <span aria-hidden="true" class="fa fa-refresh chips btn btn-light btn-lg mt-2 w-100 btn-outline-secondary" id="resetBtn"
+                                  title="Click here to Reset Game!"></span>
+                            </span>
+                        </ul>
+                    </div>
+                    <div class="col-10 p-0">
+                        <div class="sideBets"></div>
+                        <ul class="outerTable">
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="col-md-1 col-sm-2 mt-md-5 p-0">
-            <ul class="chipsContainer">
-                <li class="chips" id="chips_1" style="background-color: yellow" value="1">1</li>
-                <li class="chips" id="chips_5" style="background-color: pink" value="5">5</li>
-                <li class="chips" id="chips_10" style="background-color: blue" value="10">10</li>
-                <li class="chips" id="chips_25" style="background-color: green" value="25">25</li>
-                <li class="chips" id="chips_50" style="background-color: red" value="50">50</li>
-                <span aria-hidden="true" class="fa fa-play chips" id="spinBtn"
-                      title="Click to Play and Spin the Wheel!"></span>
-                <span aria-hidden="true" class="fa fa-refresh chips" id="resetBtn"
-                      title="Click here to Reset Game!"></span>
-                </span>
-            </ul>
-        </div>
-        <div class="col-md-6 col-sm-12 mt-md-5 p-0">
-            <div class="sideBets px-1"></div>
-            <ul class="outerTable px-1">
-            </ul>
         </div>
     </div>
 </div>
