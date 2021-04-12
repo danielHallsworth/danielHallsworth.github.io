@@ -37,8 +37,9 @@
     flex-basis: 33%;
 }
 
-#numbers_40, #numbers_41, #numbers_42, #numbers_43, #numbers_44, #numbers_45, #numbers_46 {
+.sideBetsBottom {
     flex-basis: 16.5%;
+    font-size: 1.2rem !important;
 }
 
 #numbers_0 {

@@ -368,7 +368,7 @@ function createElementFnc(spvParent, spvType, spvTextNode, spvId, spvClass, bpvE
   elvLiElement.style.backgroundColor = spvColour
  }
   
-  elvLiElement.classList.add(spvClass)   
+  elvLiElement.className = spvClass; //classList.add
   elvLiElement.value = spvValue;  
   
   elvLiElement.appendChild(elvNode);   
@@ -450,11 +450,11 @@ function activeClassFnc(){
 function drawAdditionalBets(epvParent){
 
   for (let i = 1; i <= 3; i++){       
-    createElementFnc(epvParent, 'li',returnThirdTxtFnc(i),'numbers_'+ (36 + i) , 'innerNumbers', true, 0, null, 'gold');    
+    createElementFnc(epvParent, 'li',returnThirdTxtFnc(i),'numbers_'+ (36 + i) , 'innerNumbers sideBets', true, 0, null, 'gold');
   } 
 
   for (let i = 1; i <= 6; i++){       
-    createElementFnc(epvParent, 'li',returnPercent50Fnc(i),'numbers_'+ (39 + i) , 'innerNumbers', true, 0, null, 'gold')
+    createElementFnc(epvParent, 'li',returnPercent50Fnc(i),'numbers_'+ (39 + i) , 'innerNumbers sideBets sideBetsBottom', true, 0, null, 'gold')
   } 
 
 }
