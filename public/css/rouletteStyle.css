@@ -6,13 +6,19 @@
 .chipsContainer li {
     color: white;
     text-align: center;
-    line-height: 2.5rem;
+    line-height: 3rem;
     list-style-type: none;
     border: 1px solid black;
     font-weight: bold;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
 }
 
-.chips:hover, .bettingContainer li:hover {
+.chips:hover, .bettingContainer li:hover, .outerTable li:hover {
     background-color: #F8F8F8 !important;
     color: gold;
 }
