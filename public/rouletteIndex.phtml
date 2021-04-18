@@ -8,7 +8,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-<div class="container-fluid ">
+<div class="container-fluid">
+    <div class="row mt-5 mx-5">
+        <a href="index.php" class="highlightLink col-1"><span aria-hidden="true" class="fa fa-arrow-left fa-2x fa-lg"
+                                  title="Click to return to home page"></span>
+        </a>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12">
@@ -16,12 +21,14 @@
                     <canvas height="450" id="canvas" width="460" class="p-0 mx-auto"></canvas>
                 </div>
                 <div class="row mx-auto mt-3 text-center p-0">
-                    <table class="table table-light table-bordered">
+                    <table class="table table-bordered">
+                        <thead class="table-secondary">
                         <tr>
                             <th>Bank Total</th>
                             <th>Bet Value</th>
                             <th>Last Win</th>
                         </tr>
+                        </thead>
                         <tr>
                             <td id="bankTotal" value="100">100</td>
                             <td id="betDisplay" value="0">0</td>
@@ -34,15 +41,18 @@
             <div class="col-md-6 col-sm-12 mt-md-5 p-0">
                 <div class="row">
                     <div class="col-2 p-0">
-                        <ul class="chipsContainer">
+                        <ul class="chipsContainer text-center">
                             <li class="chips" id="chips_1" style="background-color: yellow" value="1">1</li>
                             <li class="chips" id="chips_5" style="background-color: pink" value="5">5</li>
                             <li class="chips" id="chips_10" style="background-color: blue" value="10">10</li>
                             <li class="chips" id="chips_25" style="background-color: green" value="25">25</li>
                             <li class="chips" id="chips_50" style="background-color: red" value="50">50</li>
-                            <span aria-hidden="true" class="fa fa-play chips btn btn-light btn-lg mt-2 w-100 btn-outline-secondary" id="spinBtn"
+                            <span aria-hidden="true"
+                                  class="fa fa-play chips btn btn-light btn-lg mt-2 btn-outline-secondary" id="spinBtn"
                                   title="Click to Play and Spin the Wheel!"></span>
-                            <span aria-hidden="true" class="fa fa-refresh chips btn btn-light btn-lg mt-2 w-100 btn-outline-secondary" id="resetBtn"
+                            <span aria-hidden="true"
+                                  class="fa fa-refresh chips btn btn-light btn-lg mt-2 btn-outline-secondary"
+                                  id="resetBtn"
                                   title="Click here to Reset Game!"></span>
                             </span>
                         </ul>

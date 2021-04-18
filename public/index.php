@@ -4,8 +4,8 @@
 		<title>Daniel Hallsworth Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="css/main.css" />
+		<noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -49,10 +49,10 @@
 									</a></h2>
 									<p> A roulette game coded in JavaScript, the main purpose of this app was to practice DOM manipulation in JavaScript </p>
 								</header>
-								<a  href="#" class="image main"><img src="../images/rouletteImg.jpg" alt="" /></a>
+								<a  href="#" class="image main"><img src="images/rouletteImg.jpg" alt="" /></a>
 								<ul class="actions special">
 									<li><a href="https://github.com/danielHallsworth/danielHallsworth.github.io" class="button large">Code</a></li>
-									<li><a href="rouletteIndex.html" class="button large">View</a></li>
+									<li><a href="rouletteIndex.phtml" class="button large">View</a></li>
 								</ul>
 							</article>
 
@@ -84,13 +84,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
 
 	</body>
 </html>

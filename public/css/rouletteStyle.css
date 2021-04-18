@@ -18,9 +18,13 @@
     margin-bottom: 0.5rem;
 }
 
-.chips:hover, .bettingContainer li:hover, .outerTable li:hover {
+.chips:hover, .bettingContainer li:hover, .outerTable li:hover, .highlightLink:hover {
     background-color: #F8F8F8 !important;
     color: gold;
+}
+
+.highlightLink {
+    color: black;
 }
 
 .outerTable {
@@ -45,7 +49,18 @@
 
 .sideBetsBottom {
     flex-basis: 16.5%;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
+}
+
+.sideBets {
+    color: #6c757d !important;
+    border-color: #6c757d !important;
+    background-color: white !important;
+}
+
+.sideBets:hover {
+    background-color: gold !important;
+    color: gold !important;
 }
 
 #numbers_0 {

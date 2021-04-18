@@ -395,7 +395,7 @@ function returnThirdTxtFnc(npvIndex){
 function returnPercent50Fnc(npvIndex){
 
   if(npvIndex == 1){
-    return '1 to 18'
+    return '1-18'
   }else if(npvIndex == 2){
     return 'EVEN'
   }else if(npvIndex == 3){
@@ -406,7 +406,7 @@ function returnPercent50Fnc(npvIndex){
     return 'ODD'
   }
   else{
-    return '19 to 36'
+    return '19-36'
   }
 
 }
@@ -450,11 +450,11 @@ function activeClassFnc(){
 function drawAdditionalBets(epvParent){
 
   for (let i = 1; i <= 3; i++){       
-    createElementFnc(epvParent, 'li',returnThirdTxtFnc(i),'numbers_'+ (36 + i) , 'innerNumbers sideBets', true, 0, null, 'gold');
+    createElementFnc(epvParent, 'li',returnThirdTxtFnc(i),'numbers_'+ (36 + i) , 'innerNumbers sideBets', true, 0, null);
   } 
 
   for (let i = 1; i <= 6; i++){       
-    createElementFnc(epvParent, 'li',returnPercent50Fnc(i),'numbers_'+ (39 + i) , 'innerNumbers sideBets sideBetsBottom', true, 0, null, 'gold')
+    createElementFnc(epvParent, 'li',returnPercent50Fnc(i),'numbers_'+ (39 + i) , 'innerNumbers sideBets sideBetsBottom', true, 0, null)
   } 
 
 }
