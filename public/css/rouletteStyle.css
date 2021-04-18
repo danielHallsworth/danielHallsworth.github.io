@@ -1,0 +1,128 @@
+#canvas {
+    height: 450px;
+    width: 460px;
+}
+
+.chipsContainer li {
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    list-style-type: none;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}
+
+.chips:hover, .bettingContainer li:hover, .outerTable li:hover, .highlightLink:hover {
+    background-color: #F8F8F8 !important;
+    color: gold;
+}
+
+.highlightLink {
+    color: black;
+}
+
+.outerTable {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+}
+
+.outerTable li {
+    color: white;
+    font-size: x-large;
+    list-style-type: none;
+    border: 1px solid black;
+    position: relative;
+    z-index: 100;
+}
+
+.innerNumbers {
+    flex-basis: 33%;
+}
+
+.sideBetsBottom {
+    flex-basis: 16.5%;
+    font-size: 1rem !important;
+}
+
+.sideBets {
+    color: #6c757d !important;
+    border-color: #6c757d !important;
+    background-color: white !important;
+}
+
+.sideBets:hover {
+    background-color: gold !important;
+    color: gold !important;
+}
+
+#numbers_0 {
+    flex-basis: 99%;
+}
+
+.betAppend {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: white;
+    color: white;
+    position: absolute;
+    margin-top: -14px;
+    border-radius: 50%;
+    z-index: 0 !important;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+#recentNumbers {
+    list-style-type: none;
+}
+
+.recentWinningCls {
+    font-size: 20px;
+    color: white;
+    width: 50px;
+    text-align: center;
+    margin-right: 1rem;
+    float: left;
+}
+
+.active {
+    background-color: white !important;
+    color: gold !important;
+}
+
+.percent50 {
+    float: right;
+    background-color: blue !important;
+}
+
+.pulseTextCls {
+    animation: pulse 1s alternate infinite;
+    -webkit-animation: pulse 1s alternate infinite;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes pulse {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
